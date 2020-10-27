@@ -1,12 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
-
-function getNum() {
-  return Math.floor(Math.random() * 10) + 1;
-}
 
 class Number extends React.Component {
   render() {
+    function getNum() {
+      return Math.floor(Math.random() * 10) + 1;
+    }
     const num = getNum();
     return (
       <div>
@@ -21,5 +19,4 @@ class Number extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<Number />, document.getElementById("root"));
+export default Number;
