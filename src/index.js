@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-function Hello() {
-  return (
-    <div>
-      <h1>Hello there!</h1>
-      <h1>Hello there!</h1>
-      <h1>Hello there!</h1>
-    </div>
-  );
+function getMood() {
+  const moods = ["Angry", "Hungry", "Silly", "Quiet", "Paranoid"];
+  return moods[Math.floor(Math.random() * moods.length)];
 }
 
-ReactDOM.render(<Hello />, document.getElementById("root"));
+class JSX extends React.Component {
+  render() {
+    return <h1>My Mood is: {getMood()}</h1>;
+  }
+}
+
+ReactDOM.render(<JSX />, document.getElementById("root"));
