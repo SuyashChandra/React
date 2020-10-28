@@ -10,13 +10,13 @@ class Machine extends React.Component {
     const rand1 = randomSlot();
     const rand2 = randomSlot();
     const rand3 = randomSlot();
-    console.log(rand1, rand2, rand3);
+    const colors = { fontSize: "50px", backgroundColor: "lime" };
     return (
-      <div>
-        <p>
+      <div className="Machine">
+        <p style={colors}>
           {pos[rand1]} {pos[rand2]} {pos[rand3]}
         </p>
-        <p>
+        <p className={rand1 === rand2 && rand1 === rand3 ? "win" : "lose"}>
           {rand1 === rand2 && rand1 === rand3 ? (
             <img src="https://media1.tenor.com/images/90dc8bb677df8b3d3eab008ea50cefd1/tenor.gif?itemid=15193435" />
           ) : (
