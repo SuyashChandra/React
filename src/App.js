@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDom from "react-dom";
-import Machine from "./Machine";
+import Rando from "./Rando";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Krappa Machine!!!</h1>
-        <Machine kamo1="(╯°□°）╯︵ ┻━┻" kamo2="༼ つ ◕_◕ ༽つ" kamo3="(⌐■_■)" />
+        <h1>Pepega Couner</h1>
+        <Rando max={5} />
       </div>
     );
   }
