@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDom from "react-dom";
-import Rando from "./Rando";
+import Button from "./Button";
+import BrokenClick from "./BrokenClick";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Pepega Couner</h1>
-        <Rando max={5} />
+        <h1>Click Me</h1>
+        <Button />
+        <BrokenClick />
       </div>
     );
   }
