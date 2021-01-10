@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDom from "react-dom";
-import RollDice from "./RollDice";
+import Gamba from "./Gamba";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <RollDice />
+        <Gamba />
       </div>
     );
   }
