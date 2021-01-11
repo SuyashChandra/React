@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDom from "react-dom";
-import Gamba from "./Gamba";
+import EmoteContainer from "./EmoteContainer";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Gamba />
+        <EmoteContainer />
       </div>
     );
   }
