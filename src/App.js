@@ -1,14 +1,17 @@
-import React from "react";
-import ReactDom from "react-dom";
-import EmoteContainer from "./EmoteContainer";
+import React, { Component } from "react";
+import Board from "./Board";
+import "./App.css";
 
-class App extends React.Component {
+/** Simple app that just shows the LightsOut game. */
+
+class App extends Component {
   render() {
     return (
-      <div>
-        <EmoteContainer />
+      <div className='App'>
+        <Board />
       </div>
     );
   }
 }
-ReactDom.render(<App />, document.getElementById("root"));
+
+export default App;
