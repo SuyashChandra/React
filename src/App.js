@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDom from "react-dom";
-import Gamba from "./Gamba";
+import ZenQuote from "./ZenQuote";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Gamba />
+        <ZenQuote />
       </div>
     );
   }
