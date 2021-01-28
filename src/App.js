@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDom from "react-dom";
-import ZenQuote from "./ZenQuote";
+import GithubUser from "./GithubUser";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <ZenQuote />
+        <GithubUser username="SuyashChandra" />
+        <GithubUser username="twitchtv" />
       </div>
     );
   }
