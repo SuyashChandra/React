@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDom from "react-dom";
-import TodoList from "./TodoList";
+import CardDeck from "./CardDeck";
+import "./App.css";
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Todo List</h1>
-        <TodoList />
+      <div className="App">
+        <h1>Card Deck</h1>
+        <CardDeck />
       </div>
     );
   }
