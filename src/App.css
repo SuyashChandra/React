@@ -3,9 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  letter-spacing: 0.5em;
-  color: azure;
-}
-h1 {
-  margin-bottom: 50px;
+  color: #78909c;
+  font-family: sans-serif;
+  background: rgb(233, 236, 32);
+  background: linear-gradient(
+    135deg,
+    rgba(233, 236, 32, 1) 50%,
+    rgba(24, 212, 224, 1) 50%
+  );
+  height: 100vh;
+  /* font-size: 0.5rem; */
 }

@@ -1,0 +1,126 @@
+.Dashboard {
+  display: flex;
+  /* flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  width: 80%;
+  height: 80%;
+}
+
+.Dashboard-left {
+  width: 30%;
+  z-index: 2;
+  display: flex;
+  background: #a24ef5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1),
+    inset 0 0 25px #51257bd6;
+}
+
+.Dashboard-title {
+  font-size: 4rem;
+  margin: 2rem;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 0.6rem;
+}
+
+.Dashboard-title span {
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.Dashboard-left img {
+  width: 50%;
+  border-radius: 50%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard-right {
+  width: 70%;
+  height: 90%;
+  overflow: scroll;
+  align-self: center;
+  background: white;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard-right::-webkit-scrollbar {
+  display: none;
+}
+
+.Dashboard-spinner {
+  color: white;
+  text-align: center;
+}
+
+.Dashboard-button {
+  font-size: 1.5rem;
+  width: 50%;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  margin: 2rem;
+  word-spacing: 1rem;
+  transition: 0.8s cubic-bezier(0.2, 1, 0.2, 1);
+  color: white;
+  background: linear-gradient(
+    135deg,
+    rgba(233, 236, 32, 1) 50%,
+    rgba(24, 212, 224, 1) 50%
+  );
+  outline: 0;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.Dashboard-left img:hover {
+  animation-name: shake-def-rotate;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+
+@keyframes shake-def-rotate {
+  0% {
+    transform: translate(1px, 1px) rotate(-0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(-1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(-0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(-1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(-0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(-0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
