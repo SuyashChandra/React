@@ -1,0 +1,52 @@
+.Wildlife {
+  margin: 0;
+  height: 100vh;
+  transition: 0.3s all ease;
+}
+
+.Wildlife-nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.link {
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: 300;
+  text-shadow: 4px 4px 11px rgb(0, 0, 0);
+}
+
+.active {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  transition: 1s color ease;
+  text-decoration: none;
+  font-size: 2.5em;
+  color: rgb(224 153 66);
+}
+
+.active:after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 5px;
+  height: 0.35rem;
+  width: 0;
+  background: #d73444;
+  bottom: -0.25em;
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.icon {
+  font-size: 2rem;
+  text-shadow: 4px 4px 11px rgb(0, 0, 0);
+}

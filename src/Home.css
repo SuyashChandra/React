@@ -1,0 +1,25 @@
+/* .Home {
+  height: 100vh;
+} */
+
+.Home-Links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 80vh;
+  width: 50%; */
+  padding: 2rem;
+  margin-top: 20rem;
+  margin-left: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Home-Links a {
+  text-decoration: none;
+  color: white;
+}
