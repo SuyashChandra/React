@@ -1,15 +1,22 @@
 import React from "react";
 import ReactDom from "react-dom";
-import Rando from "./Rando";
+import { BrowserRouter } from "react-router-dom";
+// import $ from "jquery";
+// import Popper from "popper.js";
+// import bootstrap from "bootstrap";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.bundle.min";
+
+import DogApp from "./DogApp";
 
 class App extends React.Component {
   render() {
-    return (
-      <div>
-        <h1>Pepega Couner</h1>
-        <Rando max={5} />
-      </div>
-    );
+    return <DogApp />;
   }
 }
-ReactDom.render(<App />, document.getElementById("root"));
+ReactDom.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
