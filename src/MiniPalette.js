@@ -8,7 +8,7 @@ const styles = {
     borderRadius: "5px",
     padding: "0.5rem",
     position: "relative",
-    oveflow: "hidden",
+    overflow: "hidden",
     "&:hidden": {
       cursor: "pointer",
     },
